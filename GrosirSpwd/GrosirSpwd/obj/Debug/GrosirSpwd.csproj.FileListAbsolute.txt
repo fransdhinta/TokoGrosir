@@ -1,0 +1,10 @@
+c:\users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\bin\Debug\GrosirSpwd.exe.config
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\bin\Debug\GrosirSpwd.exe
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\bin\Debug\GrosirSpwd.pdb
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.Form1.resources
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.Properties.Resources.resources
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.csproj.GenerateResource.Cache
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.exe
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.pdb
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.tbhBarang.resources
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.dashboard.resources
