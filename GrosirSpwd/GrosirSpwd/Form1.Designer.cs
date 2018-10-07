@@ -36,19 +36,19 @@
             this.pengaturan = new System.Windows.Forms.Button();
             this.riwayatTransaksi = new System.Windows.Forms.Button();
             this.transaksi = new System.Windows.Forms.Button();
-            this.lihatBarang = new System.Windows.Forms.Button();
-            this.tambahBarang = new System.Windows.Forms.Button();
+            this.dataBarang = new System.Windows.Forms.Button();
             this.toko = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.waktu = new System.Windows.Forms.Label();
+            this.tanggal = new System.Windows.Forms.Label();
+            this.labelWaktu = new System.Windows.Forms.Label();
+            this.labelTanggal = new System.Windows.Forms.Label();
             this.btnSembunyi = new System.Windows.Forms.Button();
             this.btnKeluar = new System.Windows.Forms.Button();
-            this.labelTanggal = new System.Windows.Forms.Label();
-            this.labelWaktu = new System.Windows.Forms.Label();
-            this.tanggal = new System.Windows.Forms.Label();
-            this.waktu = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tbhBarang1 = new GrosirSpwd.tbhBarang();
             this.dashboard1 = new GrosirSpwd.dashboard();
+            this.tbhBarang1 = new GrosirSpwd.tbhBarang();
+            this.lhtBarang1 = new GrosirSpwd.lhtBarang();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -61,8 +61,7 @@
             this.panel1.Controls.Add(this.pengaturan);
             this.panel1.Controls.Add(this.riwayatTransaksi);
             this.panel1.Controls.Add(this.transaksi);
-            this.panel1.Controls.Add(this.lihatBarang);
-            this.panel1.Controls.Add(this.tambahBarang);
+            this.panel1.Controls.Add(this.dataBarang);
             this.panel1.Controls.Add(this.toko);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -103,7 +102,7 @@
             this.pengaturan.ForeColor = System.Drawing.Color.White;
             this.pengaturan.Image = ((System.Drawing.Image)(resources.GetObject("pengaturan.Image")));
             this.pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pengaturan.Location = new System.Drawing.Point(12, 486);
+            this.pengaturan.Location = new System.Drawing.Point(12, 404);
             this.pengaturan.Name = "pengaturan";
             this.pengaturan.Size = new System.Drawing.Size(172, 85);
             this.pengaturan.TabIndex = 8;
@@ -120,7 +119,7 @@
             this.riwayatTransaksi.ForeColor = System.Drawing.Color.White;
             this.riwayatTransaksi.Image = ((System.Drawing.Image)(resources.GetObject("riwayatTransaksi.Image")));
             this.riwayatTransaksi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.riwayatTransaksi.Location = new System.Drawing.Point(12, 395);
+            this.riwayatTransaksi.Location = new System.Drawing.Point(12, 313);
             this.riwayatTransaksi.Name = "riwayatTransaksi";
             this.riwayatTransaksi.Size = new System.Drawing.Size(172, 85);
             this.riwayatTransaksi.TabIndex = 7;
@@ -137,7 +136,7 @@
             this.transaksi.ForeColor = System.Drawing.Color.White;
             this.transaksi.Image = ((System.Drawing.Image)(resources.GetObject("transaksi.Image")));
             this.transaksi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transaksi.Location = new System.Drawing.Point(12, 304);
+            this.transaksi.Location = new System.Drawing.Point(12, 222);
             this.transaksi.Name = "transaksi";
             this.transaksi.Size = new System.Drawing.Size(172, 85);
             this.transaksi.TabIndex = 6;
@@ -146,39 +145,22 @@
             this.transaksi.UseVisualStyleBackColor = true;
             this.transaksi.Click += new System.EventHandler(this.transaksi_Click);
             // 
-            // lihatBarang
+            // dataBarang
             // 
-            this.lihatBarang.FlatAppearance.BorderSize = 0;
-            this.lihatBarang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lihatBarang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lihatBarang.ForeColor = System.Drawing.Color.White;
-            this.lihatBarang.Image = ((System.Drawing.Image)(resources.GetObject("lihatBarang.Image")));
-            this.lihatBarang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lihatBarang.Location = new System.Drawing.Point(12, 213);
-            this.lihatBarang.Name = "lihatBarang";
-            this.lihatBarang.Size = new System.Drawing.Size(172, 85);
-            this.lihatBarang.TabIndex = 5;
-            this.lihatBarang.Text = "      Lihat Barang";
-            this.lihatBarang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.lihatBarang.UseVisualStyleBackColor = true;
-            this.lihatBarang.Click += new System.EventHandler(this.lihatBarang_Click);
-            // 
-            // tambahBarang
-            // 
-            this.tambahBarang.FlatAppearance.BorderSize = 0;
-            this.tambahBarang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tambahBarang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tambahBarang.ForeColor = System.Drawing.Color.White;
-            this.tambahBarang.Image = ((System.Drawing.Image)(resources.GetObject("tambahBarang.Image")));
-            this.tambahBarang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tambahBarang.Location = new System.Drawing.Point(12, 122);
-            this.tambahBarang.Name = "tambahBarang";
-            this.tambahBarang.Size = new System.Drawing.Size(172, 85);
-            this.tambahBarang.TabIndex = 4;
-            this.tambahBarang.Text = "      Tambah      Barang";
-            this.tambahBarang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.tambahBarang.UseVisualStyleBackColor = true;
-            this.tambahBarang.Click += new System.EventHandler(this.tambahBarang_Click);
+            this.dataBarang.FlatAppearance.BorderSize = 0;
+            this.dataBarang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataBarang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataBarang.ForeColor = System.Drawing.Color.White;
+            this.dataBarang.Image = ((System.Drawing.Image)(resources.GetObject("dataBarang.Image")));
+            this.dataBarang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dataBarang.Location = new System.Drawing.Point(12, 131);
+            this.dataBarang.Name = "dataBarang";
+            this.dataBarang.Size = new System.Drawing.Size(172, 85);
+            this.dataBarang.TabIndex = 5;
+            this.dataBarang.Text = "      Data Barang";
+            this.dataBarang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dataBarang.UseVisualStyleBackColor = true;
+            this.dataBarang.Click += new System.EventHandler(this.lihatBarang_Click);
             // 
             // toko
             // 
@@ -216,6 +198,46 @@
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
+            // waktu
+            // 
+            this.waktu.AutoSize = true;
+            this.waktu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.waktu.Location = new System.Drawing.Point(415, 2);
+            this.waktu.Name = "waktu";
+            this.waktu.Size = new System.Drawing.Size(50, 19);
+            this.waktu.TabIndex = 5;
+            this.waktu.Text = "waktu";
+            // 
+            // tanggal
+            // 
+            this.tanggal.AutoSize = true;
+            this.tanggal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tanggal.Location = new System.Drawing.Point(84, 2);
+            this.tanggal.Name = "tanggal";
+            this.tanggal.Size = new System.Drawing.Size(57, 19);
+            this.tanggal.TabIndex = 3;
+            this.tanggal.Text = "tanggal";
+            // 
+            // labelWaktu
+            // 
+            this.labelWaktu.AutoSize = true;
+            this.labelWaktu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelWaktu.Location = new System.Drawing.Point(346, 2);
+            this.labelWaktu.Name = "labelWaktu";
+            this.labelWaktu.Size = new System.Drawing.Size(63, 19);
+            this.labelWaktu.TabIndex = 4;
+            this.labelWaktu.Text = "Waktu :";
+            // 
+            // labelTanggal
+            // 
+            this.labelTanggal.AutoSize = true;
+            this.labelTanggal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelTanggal.Location = new System.Drawing.Point(6, 2);
+            this.labelTanggal.Name = "labelTanggal";
+            this.labelTanggal.Size = new System.Drawing.Size(72, 19);
+            this.labelTanggal.TabIndex = 3;
+            this.labelTanggal.Text = "Tanggal :";
+            // 
             // btnSembunyi
             // 
             this.btnSembunyi.FlatAppearance.BorderSize = 0;
@@ -240,58 +262,10 @@
             this.btnKeluar.UseVisualStyleBackColor = true;
             this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
             // 
-            // labelTanggal
-            // 
-            this.labelTanggal.AutoSize = true;
-            this.labelTanggal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelTanggal.Location = new System.Drawing.Point(6, 2);
-            this.labelTanggal.Name = "labelTanggal";
-            this.labelTanggal.Size = new System.Drawing.Size(72, 19);
-            this.labelTanggal.TabIndex = 3;
-            this.labelTanggal.Text = "Tanggal :";
-            // 
-            // labelWaktu
-            // 
-            this.labelWaktu.AutoSize = true;
-            this.labelWaktu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelWaktu.Location = new System.Drawing.Point(346, 2);
-            this.labelWaktu.Name = "labelWaktu";
-            this.labelWaktu.Size = new System.Drawing.Size(63, 19);
-            this.labelWaktu.TabIndex = 4;
-            this.labelWaktu.Text = "Waktu :";
-            // 
-            // tanggal
-            // 
-            this.tanggal.AutoSize = true;
-            this.tanggal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tanggal.Location = new System.Drawing.Point(84, 2);
-            this.tanggal.Name = "tanggal";
-            this.tanggal.Size = new System.Drawing.Size(57, 19);
-            this.tanggal.TabIndex = 3;
-            this.tanggal.Text = "tanggal";
-            // 
-            // waktu
-            // 
-            this.waktu.AutoSize = true;
-            this.waktu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.waktu.Location = new System.Drawing.Point(415, 2);
-            this.waktu.Name = "waktu";
-            this.waktu.Size = new System.Drawing.Size(50, 19);
-            this.waktu.TabIndex = 5;
-            this.waktu.Text = "waktu";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // tbhBarang1
-            // 
-            this.tbhBarang1.Location = new System.Drawing.Point(184, 25);
-            this.tbhBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbhBarang1.Name = "tbhBarang1";
-            this.tbhBarang1.Size = new System.Drawing.Size(1111, 742);
-            this.tbhBarang1.TabIndex = 3;
             // 
             // dashboard1
             // 
@@ -301,12 +275,29 @@
             this.dashboard1.Size = new System.Drawing.Size(1111, 742);
             this.dashboard1.TabIndex = 4;
             // 
+            // tbhBarang1
+            // 
+            this.tbhBarang1.Location = new System.Drawing.Point(184, 25);
+            this.tbhBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbhBarang1.Name = "tbhBarang1";
+            this.tbhBarang1.Size = new System.Drawing.Size(1111, 742);
+            this.tbhBarang1.TabIndex = 3;
+            // 
+            // lhtBarang1
+            // 
+            this.lhtBarang1.Location = new System.Drawing.Point(184, 25);
+            this.lhtBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lhtBarang1.Name = "lhtBarang1";
+            this.lhtBarang1.Size = new System.Drawing.Size(1111, 742);
+            this.lhtBarang1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1295, 773);
+            this.Controls.Add(this.lhtBarang1);
             this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.tbhBarang1);
             this.Controls.Add(this.panel2);
@@ -330,10 +321,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button toko;
-        private System.Windows.Forms.Button tambahBarang;
         private System.Windows.Forms.Button riwayatTransaksi;
         private System.Windows.Forms.Button transaksi;
-        private System.Windows.Forms.Button lihatBarang;
+        private System.Windows.Forms.Button dataBarang;
         private System.Windows.Forms.Button pengaturan;
         private System.Windows.Forms.Button keluar;
         private System.Windows.Forms.Panel SidePanel;
@@ -346,6 +336,7 @@
         private System.Windows.Forms.Timer timer1;
         private tbhBarang tbhBarang1;
         private dashboard dashboard1;
+        private lhtBarang lhtBarang1;
     }
 }
 

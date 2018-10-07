@@ -186,7 +186,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="lihatBarang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dataBarang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
@@ -197,17 +197,6 @@
         VmVwCHewp/wIzjMMwiZE7DPoq2oD5nbhQmlRuT4rC8TXYM/2G9j5r/eIiK/gA8bK13uT+2pzDIgPNNrR
         PIRJh9I+ndIFYnvRZvAC+3AP6QcncqZtVQY7cKnUrbRPp+xCpbYGRZUMan9b/iJ85X67Ns0PaRPMtKYB
         XTcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="tambahBarang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
-        TUUH4goCDS8dDiMH5AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACtSURBVEhL
-        Yxge4P///5ZA3A/EM3DgJiBmgSonDQA1FgIxMWA1EJNuCVDTHbB24gDIEgMisDrUeLAFtAKXgdiKlhaA
-        wA5aW/CPEguWAnEGELeAeTgAJRZkQOMQFKk4wciy4ALIQEIAqA6U8+FgUFnwBoiRyydbqIEyaOJXgRgO
-        SLEAHYymIuoAkAX3IEyagHsgC8ohbJqAclAwgiyxBmJ8VSapGGSWNdjwIQ4YGAB4iXKzdhcL5QAAAABJ
-        RU5ErkJggg==
 </value>
   </data>
   <data name="toko.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

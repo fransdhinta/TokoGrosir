@@ -30,18 +30,12 @@ namespace GrosirSpwd
             SidePanel.Top = toko.Top;
             dashboard1.BringToFront();
         }
-
-        private void tambahBarang_Click(object sender, EventArgs e)
-        {
-            SidePanel.Height = tambahBarang.Height;
-            SidePanel.Top = tambahBarang.Top;
-            tbhBarang1.BringToFront();
-        }
-
+        
         private void lihatBarang_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = lihatBarang.Height;
-            SidePanel.Top = lihatBarang.Top;
+            SidePanel.Height = dataBarang.Height;
+            SidePanel.Top = dataBarang.Top;
+            lhtBarang1.BringToFront();
         }
 
         private void transaksi_Click(object sender, EventArgs e)
