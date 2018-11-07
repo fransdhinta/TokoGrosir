@@ -9,3 +9,7 @@ C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\D
 C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.tbhBarang.resources
 C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.dashboard.resources
 C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.lhtBarang.resources
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.transaksi.resources
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\bin\Debug\MySql.Data.dll
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\bin\Debug\MySql.Data.xml
+C:\Users\firas\documents\visual studio 2015\Projects\GrosirSpwd\GrosirSpwd\obj\Debug\GrosirSpwd.csprojResolveAssemblyReference.cache

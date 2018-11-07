@@ -46,9 +46,10 @@
             this.btnSembunyi = new System.Windows.Forms.Button();
             this.btnKeluar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.transaksi1 = new GrosirSpwd.transaksi();
+            this.lhtBarang1 = new GrosirSpwd.lhtBarang();
             this.dashboard1 = new GrosirSpwd.dashboard();
             this.tbhBarang1 = new GrosirSpwd.tbhBarang();
-            this.lhtBarang1 = new GrosirSpwd.lhtBarang();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -194,6 +195,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1111, 25);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
@@ -267,6 +269,22 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // transaksi1
+            // 
+            this.transaksi1.Location = new System.Drawing.Point(184, 25);
+            this.transaksi1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.transaksi1.Name = "transaksi1";
+            this.transaksi1.Size = new System.Drawing.Size(1111, 742);
+            this.transaksi1.TabIndex = 6;
+            // 
+            // lhtBarang1
+            // 
+            this.lhtBarang1.Location = new System.Drawing.Point(184, 25);
+            this.lhtBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lhtBarang1.Name = "lhtBarang1";
+            this.lhtBarang1.Size = new System.Drawing.Size(1111, 742);
+            this.lhtBarang1.TabIndex = 5;
+            // 
             // dashboard1
             // 
             this.dashboard1.Location = new System.Drawing.Point(184, 25);
@@ -283,20 +301,13 @@
             this.tbhBarang1.Size = new System.Drawing.Size(1111, 742);
             this.tbhBarang1.TabIndex = 3;
             // 
-            // lhtBarang1
-            // 
-            this.lhtBarang1.Location = new System.Drawing.Point(184, 25);
-            this.lhtBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.lhtBarang1.Name = "lhtBarang1";
-            this.lhtBarang1.Size = new System.Drawing.Size(1111, 742);
-            this.lhtBarang1.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1295, 773);
+            this.Controls.Add(this.transaksi1);
             this.Controls.Add(this.lhtBarang1);
             this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.tbhBarang1);
@@ -337,6 +348,7 @@
         private tbhBarang tbhBarang1;
         private dashboard dashboard1;
         private lhtBarang lhtBarang1;
+        private transaksi transaksi1;
     }
 }
 

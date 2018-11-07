@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace GrosirSpwd
 {
@@ -42,6 +43,7 @@ namespace GrosirSpwd
         {
             SidePanel.Height = transaksi.Height;
             SidePanel.Top = transaksi.Top;
+            transaksi1.BringToFront();
         }
 
         private void riwayatTransaksi_Click(object sender, EventArgs e)
@@ -100,6 +102,11 @@ namespace GrosirSpwd
         {
             waktu.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
