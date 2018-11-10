@@ -132,14 +132,15 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(12, 264);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 22);
+            this.label3.Size = new System.Drawing.Size(132, 22);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Harga Jual";
+            this.label3.Text = "Harga Masuk";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.OrangeRed;
             this.label4.Location = new System.Drawing.Point(12, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 22);
@@ -221,6 +222,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(472, 281);
             this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_onClick);
             // 
             // ubahBtn
             // 
@@ -234,6 +236,7 @@
             this.ubahBtn.TabIndex = 18;
             this.ubahBtn.Text = "UBAH";
             this.ubahBtn.UseVisualStyleBackColor = false;
+            this.ubahBtn.Click += new System.EventHandler(this.ubahBtn_Click);
             // 
             // timePick
             // 
