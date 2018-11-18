@@ -48,9 +48,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
+            this.tTotal = new System.Windows.Forms.TextBox();
+            this.tTotalSatuan = new System.Windows.Forms.TextBox();
+            this.Total = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +96,14 @@
             // 
             // tKode
             // 
+            this.tKode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tKode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tKode.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tKode.Location = new System.Drawing.Point(174, 92);
             this.tKode.Name = "tKode";
             this.tKode.Size = new System.Drawing.Size(148, 31);
             this.tKode.TabIndex = 4;
+            this.tKode.TextChanged += new System.EventHandler(this.tKode_TextChanged);
             // 
             // tBarang
             // 
@@ -125,6 +130,7 @@
             this.tJumlah.Name = "tJumlah";
             this.tJumlah.Size = new System.Drawing.Size(148, 31);
             this.tJumlah.TabIndex = 8;
+            this.tJumlah.TextChanged += new System.EventHandler(this.tJumlah_TextChanged);
             // 
             // labelJumlah
             // 
@@ -180,9 +186,11 @@
             this.btnTambah.TabIndex = 12;
             this.btnTambah.Text = "TAMBAH";
             this.btnTambah.UseVisualStyleBackColor = false;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 170);
             this.dataGridView1.Name = "dataGridView1";
@@ -196,6 +204,7 @@
             this.tBayar.Name = "tBayar";
             this.tBayar.Size = new System.Drawing.Size(148, 31);
             this.tBayar.TabIndex = 15;
+            this.tBayar.TextChanged += new System.EventHandler(this.tBayar_TextChanged);
             // 
             // labelBayar
             // 
@@ -214,7 +223,7 @@
             this.tKembali.Name = "tKembali";
             this.tKembali.Size = new System.Drawing.Size(148, 31);
             this.tKembali.TabIndex = 17;
-            this.tKembali.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.tKembali.TextChanged += new System.EventHandler(this.tKembali_TextChanged);
             // 
             // label1
             // 
@@ -225,7 +234,6 @@
             this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 16;
             this.label1.Text = "Kembali";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -245,47 +253,71 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Total : ";
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(332, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "BATAL";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(332, 480);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(148, 23);
+            this.btnCancel.TabIndex = 22;
+            this.btnCancel.Text = "BATAL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button2
+            // btnFinish
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(490, 480);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "TAMBAH";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnFinish.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFinish.FlatAppearance.BorderSize = 0;
+            this.btnFinish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinish.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Location = new System.Drawing.Point(490, 480);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(148, 23);
+            this.btnFinish.TabIndex = 23;
+            this.btnFinish.Text = "TAMBAH";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
-            // textBox1
+            // tTotal
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(90, 480);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 31);
-            this.textBox1.TabIndex = 24;
+            this.tTotal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tTotal.Location = new System.Drawing.Point(90, 480);
+            this.tTotal.Name = "tTotal";
+            this.tTotal.ReadOnly = true;
+            this.tTotal.Size = new System.Drawing.Size(232, 31);
+            this.tTotal.TabIndex = 24;
+            // 
+            // tTotalSatuan
+            // 
+            this.tTotalSatuan.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tTotalSatuan.Location = new System.Drawing.Point(174, 133);
+            this.tTotalSatuan.Name = "tTotalSatuan";
+            this.tTotalSatuan.Size = new System.Drawing.Size(148, 31);
+            this.tTotalSatuan.TabIndex = 26;
+            this.tTotalSatuan.TextChanged += new System.EventHandler(this.tTotalSatuan_TextChanged);
+            // 
+            // Total
+            // 
+            this.Total.AutoSize = true;
+            this.Total.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.Location = new System.Drawing.Point(170, 113);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(76, 22);
+            this.Total.TabIndex = 25;
+            this.Total.Text = "Jumlah";
             // 
             // transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tTotalSatuan);
+            this.Controls.Add(this.Total);
+            this.Controls.Add(this.tTotal);
+            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tKembali);
@@ -308,6 +340,7 @@
             this.Controls.Add(this.labelTransaksi);
             this.Name = "transaksi";
             this.Size = new System.Drawing.Size(1111, 742);
+            this.Load += new System.EventHandler(this.transaksi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -336,8 +369,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.TextBox tTotal;
+        private System.Windows.Forms.TextBox tTotalSatuan;
+        private System.Windows.Forms.Label Total;
     }
 }

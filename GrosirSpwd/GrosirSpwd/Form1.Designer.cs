@@ -49,7 +49,6 @@
             this.transaksi1 = new GrosirSpwd.transaksi();
             this.lhtBarang1 = new GrosirSpwd.lhtBarang();
             this.dashboard1 = new GrosirSpwd.dashboard();
-            this.tbhBarang1 = new GrosirSpwd.tbhBarang();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -293,14 +292,6 @@
             this.dashboard1.Size = new System.Drawing.Size(1111, 742);
             this.dashboard1.TabIndex = 4;
             // 
-            // tbhBarang1
-            // 
-            this.tbhBarang1.Location = new System.Drawing.Point(184, 25);
-            this.tbhBarang1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbhBarang1.Name = "tbhBarang1";
-            this.tbhBarang1.Size = new System.Drawing.Size(1111, 742);
-            this.tbhBarang1.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -310,7 +301,6 @@
             this.Controls.Add(this.transaksi1);
             this.Controls.Add(this.lhtBarang1);
             this.Controls.Add(this.dashboard1);
-            this.Controls.Add(this.tbhBarang1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,7 +335,6 @@
         private System.Windows.Forms.Label labelWaktu;
         private System.Windows.Forms.Label labelTanggal;
         private System.Windows.Forms.Timer timer1;
-        private tbhBarang tbhBarang1;
         private dashboard dashboard1;
         private lhtBarang lhtBarang1;
         private transaksi transaksi1;
